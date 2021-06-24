@@ -11,7 +11,7 @@
           style="width: 100%; display: block"
         />
         <div class="row ml-3">
-          <% if(booking.payments.status === 'Proses'){ %>
+          <% if(booking.payments.status == 'Proses'){ %>
           <form
             action="/admin/booking/<%= booking.id %>/confirmation?_method=PUT"
             method="POST"
